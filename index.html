@@ -1,0 +1,180 @@
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+</head>
+
+<!--PRACTICA 1-->
+<h1>Actividad 01 – Visualización de Datos</h1>
+<h2>Cuadros de mando para una empresa de e-commerce</h2>
+<b>Autor:</b> Antonio Pardo Redondo <br />
+<b>URL:</b>
+<a href="https://js-s3ntur.stackblitz.io"> https://js-s3ntur.stackblitz.io </a
+><br />
+<b>Fecha:</b> 10/7/2021<br/>
+<b>Github:</b> 10/7/2021
+
+<h2>Introducción</h2>
+<div>
+  <p>
+  La junta directiva de una empresa que comercializa productos electrónicos (tabletas y portátiles), desea optimizar el negocio. Para ello decide implementar alguna forma para monitorizar de forma visual los datos de interés comercial durante los últimos 15 días.  
+  </p>
+  <p>
+  Es necesario identificar los datos de interés y representarlos de forma útil en KPI y gráficas. 
+  </p>
+</div>
+
+<h2>Facturación y Stock</h2>
+<div>
+  <p>
+  Una información crucial del negocio de una empresa es los productos que tiene almacenados y lo que tiene facturado. 
+  </p>
+  <p>
+  Esta información posibilita a la junta directiva tener una visión directa del volumen y rentabilidad del negocio. 
+  </p>
+  <p> 
+  La empresa es una tienda de venta de productos electrónicos, es indispensable saber el total facturado y la contribución de cada artículo en ese total. 
+  </p>
+  </br>
+  <iframe title="Facturación Total" aria-label="Gráfico de anillo" id="datawrapper-chart-kH4Iu" src="https://datawrapper.dwcdn.net/kH4Iu/3/" scrolling="no" frameborder="0" style="border: none;" width="600" height="412"></iframe>
+  <p>
+  El objetivo de esta gráfica de “rosquilla”, es principalmente mostrar el total facturado (valor central). Adicionalmente como un extra, esta gráfica permite desglosar los orígenes de la facturación. No es el objetivo, pero para facilitar la comprensión de esta información adicional se ha añadido el porcentaje de la contribución de cada artículo a la facturación total, así como ordenar sus posiciones en la “rosquilla”, de mayor a menor porcentaje de forma progresiva. 
+  </p>
+  <p>
+  La venta de productos conlleva algunos gastos como el almacenamiento del producto, la gestión o él envío de los productos. El objetivo de toda empresa es maximizar el beneficio, es necesario determinar que parte de la facturación repercute como beneficio. 
+  </p>
+
+  <iframe width="202" height="125" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtQi0vW5qQ1DY8lFe-3noLg9k4liB6a6e7rhjfYPCiHOfG4oFak8VxH6Fj9Xc_2rpnwX_HieYoCLfb/pubchart?oid=521136394&amp;format=interactive"></iframe>
+
+  <p>
+  Esta visualización es un KPI, cuyo objetivo es mostrar una información complementaria a la de la gráfica de total facturado. 
+  </p>
+  </br>
+  <p>
+  No todos los productos vendidos han sido facturados. Para la empresa es importante tener un control de las cantidades pendientes de facturar a corto plazo. Esta información debe tenerse en cuenta en las tomas de decisiones o también sirve para identificar posibles problemas de pagos, ... 
+  </p>
+  <iframe width="203" height="128" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2g5tUsozmO5TfBZIuLmN8NM1kq_MnBcPyUqmoR7GiXyTyJFtieDDJDJRuhhoQOHfnoXxNDEcmglLV/pubchart?oid=2006596458&amp;format=interactive"></iframe>
+  <p>
+  Esta visualización es un KPI, cuyo objetivo es mostrar una información complementaria a la de la gráfica de total facturado. 
+  </p>
+  </br>
+  <p>
+  Por último, es necesario tener un control de la inversión previa realizada en stock. Es decir, aquellos activos de la empresa que están retenidos. Con esta información se puede optimizar el stock y su inversión. 
+  </p>
+
+  <iframe width="200" height="127" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vReoTU28bZqgpuD-nmpC_ajCODaABxrSOi2ZQsYg87noj4kqY2V5oOKbcV3SqCyIJX08if1jfwHxl2C/pubchart?oid=1323665283&amp;format=interactive"></iframe>
+
+  <p>
+  Esta visualización es un KPI, cuyo objetivo es mostrar una información de interés. 
+  </p>
+
+</div>
+
+<h2>Ventas</h2>
+<div>
+  <p>
+  El negocio se basa en vender productos, para tomar decisiones o emprender nuevos proyectos es necesario tener una trazabilidad de las ventas realizadas, no solo de la facturación o ganancias. 
+  </p>
+  <p>
+  ¿Qué productos se han vendido? 
+  ¿Qué cantidad? 
+  ¿Cuándo se han vendido? 
+  </p>
+  <p>
+  Esta información no sólo visualiza la actividad de la empresa, sino que permite planear la compra de stock y la creación de campañas publicitarias orientadas a productos populares. Sabiendo que productos son más populares. 
+  </p>
+
+  <iframe width="629" height="658" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQsyITQF8vD8rQXxY9ChsIjMOJvaplFXRfHU9XcB6P_WTX16EJXmoEXmiFGmgkLdzJHg_wBxhhG3cUa/pubchart?oid=324579367&amp;format=interactive"></iframe>
+
+  <p>
+  Está gráfica de barras permite la visualización rápida y sencilla de las cantidades vendidas. Se ha decidido para facilitar su comprensión, la adición de etiquetas con el valor de cada columna, así como unas líneas de guía desde el origen del eje ‘Y’.  Otra decisión realizada es ordenar la información mostrada de menor a mayor valor (unidades vendidas). 
+  </p>
+  </br>
+  <p>
+  Por otro lado, hay que tener constancia de las actividades realizadas en el tiempo, para poder determinar el impacto de campañas o factores externos dañinos, permitiendo tomar las medidas necesarias. Adicionalmente es interesante para la compañía poder identificar patrones de ventas en fechas determinadas.  
+  </p>
+  <!-- Insertar imagen-->
+  <p> [IMAGEN POWERBI]</p>
+  <p>
+  Está visualización dinámica es una forma interesante de representar un histograma. La idea es la misma, mostrar en cada fecha lo vendido. Por un lado, a lo largo del eje ‘Y’, indica la cantidad de artículos vendidos. Por otro lado, a lo largo del eje “X", indica el total facturado de ese artículo. Como la información principal es el total facturado, se ha decidido añadir una ayuda visual adicional, el tamaño de las esferas. El tamaño de las esferas también es directamente proporcional al total facturado. 
+  </p>
+  </br>
+  <p>
+  La empresa vende tabletas y portátiles, dos tipos de productos tecnológicos diferentes con distinta facturación y popularidad. La empresa necesita tener constancia del tipo de producto más popular en sus clientes, no sólo la popularidad concreta de los artículos. No como una medida exacta, sino para determinar la tendencia de ventas y poder corregirla o planificar una sustitución, en caso de determinar un decrecimiento en la popularidad de algún tipo de producto.  
+  </p>
+
+  <iframe width="360" height="226" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxeBWo00XiCm6ZMl_S0EX08sud4uCfne9JruLtCs4n5nxpAU48xchSXBn-chAgK1NisEExSamMQ6-E/pubchart?oid=49055265&amp;format=interactive"></iframe>
+
+  <p>
+  Un diagrama de “tarta” es los suficiente claro y sencillo. No se busca una precisión milimétrica, sino tendencias claras de popularidad a la hora de que tipo de producto prefieren los clientes. 
+  </p>
+
+</div>
+
+<h2>Cuotas de mercado</h2>
+<div>
+  <p>
+  Una parte muy importante para el negocio son las campañas comerciales. Para que una campaña comercial sea exitosa, es de gran ayuda que este orientada. 
+  </p>
+  <p>
+  Un dato de interés para el negocio es determinar las características de sus clientes. Datos como el género o la edad, permiten realizar campañas de fidelización a medida, para maximizar la satisfacción de sus clientes.  
+  </p>
+  <p>
+  Por otro lado, la identificación de estas características permitiría a la empresa detectar posibles clientes para campañas publicitarias de captación. 
+  </p>
+  <iframe width="559" height="335" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2gbJ6059zxLPs4-O2OEyU9LQp1x8QUH99vKygpFZpiTjnPuYIpjZcBdf4pLAtpWoPz3yPBZYpn0Dz/pubchart?oid=186860056&amp;format=interactive"></iframe>
+
+  <p>
+  Esta gráfica muestra la tendencia del tipo de clientes que tiene la empresa. El objetivo es ver tendencias de edad, así como el género del cliente, con la finalidad de poder desarrollar campañas publicitarias o servicios enfocados a esos clientes, es decir, maximizar la satisfacción de estos. Se ha decidido por claridad ordenar los resultados por edad, de mayor a menor.  
+  </p>
+  </br>
+
+  <p>
+  Los gustos o tendencias de los clientes no siempre están determinados por el género o la edad, puede haber factores geográficos.  
+  </p>
+  <p>
+  Es de enorme interés para la empresa tener de alguna forma reflejada la localización de sus ventas. No solo permite adaptar campañas publicitarias por cultura o lengua. También permite determinar posibles competidores, futuras normativas adversas, optimizar los transportes o ver posibles inversiones según las tendencias en distintos mercados. 
+  </p>
+
+  <iframe title="Ventas por Zona" aria-label="Map" id="datawrapper-chart-2pNYE" src="https://datawrapper.dwcdn.net/2pNYE/3/" scrolling="no" frameborder="0" style="border: none;" width="852" height="439"></iframe>
+
+  <p>
+  Está grafica muestra los focos de concentración de las ventas. Esto permite optimizar el transporte de los productos, así como las campañas de captación de nuevos clientes. Es una visualización sencilla por círculos, en el que su tamaño está relacionado con el número de ventas. No se busca quien tiene más, sino concentración de mercados, es por ello que la precisión es una información secundaria. 
+  </p>
+</div>
+
+
+<h2>Conclusión</h2>
+<div>
+  <p>
+  Uno de los puntos más importantes del Business Inteligencie es la monitorización del negocio. Los cuadros de mandos son una herramienta de monitorización útil para los directivos de las empresas.  
+  </p>
+  <p>
+  Los cuadros de mando son un conjunto de gráficas y datos numéricos que permiten a una empresa o negocio tener una visión global de su funcionamiento y poder tomar decisiones. 
+  <p>
+  <p>
+  En este caso, el cuadro de mando diseñado enfoca principalmente la perspectiva financiera y de sus clientes. 
+  </p>
+</div>
+
+<h2> Herramientas empleadas </h2>
+<div>
+  <p>
+    <b>Google colab:</b> Es un entrono semi-gratuito de programación en la nube de Google. Esto entorno permite generar gráficas, pero personalmente, me resulta fáciles de crear, pero muy difíciles de modificar. Por otro lado, es un entorno en el que resulta muy fácil manejar los dataset. He utilizado esta herramienta para generar los CSV de cada una de las gráficas a partir del dataset original. 
+  </p>
+  <p>
+  <b>Google SpreadSheet:</b> Es una herramienta “Cloud” gratuita de Google de muy fácil uso de hojas de excell. Además de ser totalmente gratuita, es una herramienta que he usado con frecuencia en mi paso por la Universidad (grado) y ocasionalmente empleo en el trabajo, siendo la única de las explicadas en esta asignatura con la que tengo cierta familiaridad.  Por todo esto ha sido mi herramienta principal a la hora de generar prácticamente todas las visualizaciones. 
+  </p>
+  <p>
+  <b>Data Wraper:</b> Plataforma para la edición gráfica. He empleado esta herramienta para todas aquellas gráficas que no me ha sido posible crear en el google SpreadSheet ya sea por dificultad o porque simplemente no la tenía. Como por ejemplo el mapa, el cual no supe hacerlo (como quería) desde el google SprreadSheet, o la gráfica del velocímetro. 
+  </p>
+  <p>
+  <b>Power Bi:</b> Herramienta de pago de análisis de datos de Microsoft. La he utilizado única y exclusivamente para la visualización dinámica de progresión de ventas, por ser la única forma que conozco de crear este tipo de visualizaciones. 
+  </p>
+</div>
+<div>
+<h2> Datos usados:</h2>
+<p>
+Los datos usados no son reales, son de una empresa ficticia generados para la creación de un cuadro de mando con Qlik Cloud, para la actividad de la asignatura "Ciencia de los datos para la toma de decisiones estratégicas" de este mismo master. El dataset se basa en el propuesto como ejemplo en la actividad, añadiendo un listado de nombres de productos sacados de un dataset de Kaggle.  
+</p>
+</div>
